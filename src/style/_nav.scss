@@ -1,0 +1,31 @@
+:root {
+    --backgroundColour: #171717;
+    --white: rgb(210, 210, 210);
+  }
+nav{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button{
+        display: flex;
+        gap: 10.5px;
+        background: transparent;
+        cursor: pointer;
+        border: 2px solid var(--white);
+        padding: .5rem;
+        transition: all 0.3s ease;
+        color: white;
+        &:hover{
+            background: var(--white);
+            color: black;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        button{
+            z-index: 10;
+        }
+    }
+}
